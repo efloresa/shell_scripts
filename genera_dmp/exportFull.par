@@ -1,0 +1,61 @@
+USERID='/ as sysdba'
+FULL=Y
+DIRECTORY=RESPALDOS
+
+LOGFILE=expdp_full.log
+DUMPFILE=srvbdatm%U.dmp
+PARALLEL=4
+FILESIZE=100G
+
+#ESTIMATE=BLOCKS
+#ESTIMATE_ONLY=YES
+
+EXCLUDE=STATISTICS
+COMPRESSION=METADATA_ONLY
+
+#-- excluir LOBs grandes conocidos
+#EXCLUDE=TABLE:"IN('WF_DOCTOS_TRAMITES','CL_DOCTOS_CLIENTES','FA_CITACIONES_IMAGENES')"
+
+#-- excluir tablas internas tipo CMP$
+#EXCLUDE=TABLE:"LIKE 'CMP3$%'"
+
+#-- =========================
+#-- FILTROS
+#-- =========================
+
+QUERY=AXISATM.WF_TRAMITES:"WHERE fecha_solicita >= DATE '2025-01-01' AND fecha_solicita < DATE '2027-01-01'"
+
+QUERY=AXISATM.WF_DETALLES_TRAMITES:"WHERE id_tramite IN (
+  SELECT id_tramite 
+  FROM AXISATM.WF_TRAMITES 
+  WHERE fecha_solicita >= DATE '2025-01-01' 
+    AND fecha_solicita < DATE '2027-01-01'
+)"
+
+QUERY=AXISATM.IS_TRX_SOLICITADAS:"WHERE fecha >= TIMESTAMP '2025-01-01 00:00:00' AND fecha < TIMESTAMP '2027-01-01 00:00:00'"
+
+QUERY=AXISATM.AM_AUDITORIAS:"WHERE fecha >= DATE '2025-01-01' AND fecha < DATE '2027-01-01'"
+
+QUERY=AXISATM.EX_RESULTADOS_RTV:"WHERE fecha_registro >= DATE '2025-01-01' AND fecha_registro < DATE '2027-01-01'"
+
+
+#-- NUEVOS
+QUERY=WF_EJECUCIONES_ETAPAS:"WHERE fecha_inicio >= DATE '2025-01-01'"
+QUERY=WF_DOCTOS_GENERADOS:"WHERE fecha_registro >= DATE '2025-01-01'"
+
+#-- =========================
+#-- TABLAS LOB / PESADAS (vacías)
+#-- =========================
+QUERY=WF_DOCTOS_TRAMITES:"WHERE 1=0"
+QUERY=CL_DOCTOS_CLIENTES:"WHERE 1=0"
+QUERY=FA_CITACIONES_IMAGENES:"WHERE 1=0"
+
+#-- =========================
+#-- TABLAS TECNICAS CMP$ (vacías)
+#-- =========================
+QUERY='CMP3$19021:WHERE 1=0'
+QUERY='CMP3$19892:WHERE 1=0'
+QUERY='CMP3$22445:WHERE 1=0'
+
+
+

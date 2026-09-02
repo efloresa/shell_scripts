@@ -1,0 +1,20 @@
+
+Session altered.
+
+
+SYSDATE                                                                                                                                                                                                 
+-----------------                                                                                                                                                                                       
+31-AUG-2026 16:00                                                                                                                                                                                       
+
+
+       SID    SERIAL# USERNAME                       MACHINE                                                          LOGON_TIME        MODULE                                                          
+---------- ---------- ------------------------------ ---------------------------------------------------------------- ----------------- ----------------------------------------------------------------
+      2608      30289 JLESPINOZA                     ATM\PC00INF47V                                                   31-AUG-2026 14:21 PL/SQL Developer                                                
+      3206      26542 EMUNIZ                         ATM\LAP00INF53                                                   31-AUG-2026 14:48 PL/SQL Developer                                                
+      3396       7817 DDELGADO                       srv00pwla06.atm.local                                            31-AUG-2026 14:48 JDBC Thin Client                                                
+      3400      52539 CCEVALLOS                      ATM\PC00INF05V                                                   31-AUG-2026 14:30 PL/SQL Developer                                                
+      3559      43163 EMUNIZ                         ATM\LAP00INF53                                                   31-AUG-2026 14:57 plsqldev.exe                                                    
+      3653      21125 SMEZAC                         ATM\PC00INF43V                                                   31-AUG-2026 14:45 PL/SQL Developer                                                
+
+6 rows selected.
+

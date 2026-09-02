@@ -1,0 +1,6 @@
+alter system kill session '2608,30289' immediate;                                                                                                                                                       
+alter system kill session '3206,26542' immediate;                                                                                                                                                       
+alter system kill session '3396,7817' immediate;                                                                                                                                                        
+alter system kill session '3400,52539' immediate;                                                                                                                                                       
+alter system kill session '3559,43163' immediate;                                                                                                                                                       
+alter system kill session '3653,21125' immediate;                                                                                                                                                       

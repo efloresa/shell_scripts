@@ -1,0 +1,73 @@
+
+  COUNT(*)
+----------
+	27
+
+
+Session altered.
+
+
+SYSDATE
+-----------------
+31-AUG-2026 16:00
+
+
+       SID    SERIAL# USERNAME			     MACHINE							      LOGON_TIME	MODULE
+---------- ---------- ------------------------------ ---------------------------------------------------------------- ----------------- ----------------------------------------------------------------
+	42	49613 HYELAALDAS		     srv00pwla06.atm.local					      31-AUG-2026 09:06 JDBC Thin Client
+	69	24716 LIVERA			     srv00pwla06.atm.local					      31-AUG-2026 09:33 JDBC Thin Client
+       212	 5222 GSTRACUZZI		     srv00pwla07.atm.local					      31-AUG-2026 09:33 JDBC Thin Client
+       787	10236 LGUEVARA			     srv00pwla07.atm.local					      31-AUG-2026 09:24 JDBC Thin Client
+       793	11173 JPERLAZA			     srv00pwla01.atm.local					      31-AUG-2026 09:33 JDBC Thin Client
+       942	57006 JLESPINOZA		     srv00pwla02.atm.local					      31-AUG-2026 09:48 JDBC Thin Client
+      1598	17145 AXISCIT			     srv00pwla06.atm.local					      31-AUG-2026 09:12 JDBC Thin Client
+      1727	 6712 ALANDIVAR 		     srv00pwla02.atm.local					      31-AUG-2026 09:43 JDBC Thin Client
+      1755	23154 AXISADJUNTADOCTOS 	     srv00pwla07.atm.local					      31-AUG-2026 09:00 JDBC Thin Client
+      1803	24093 AXISPOOL			     srv00pwla01.atm.local					      31-AUG-2026 09:01 JDBC Thin Client
+      1942	20007 CSAUD			     srv00pwla06.atm.local					      31-AUG-2026 09:18 JDBC Thin Client
+      1963	29627 GALVAREZ			     srv00pwla01.atm.local					      31-AUG-2026 09:58 JDBC Thin Client
+      2050	23163 DATATOOLWS		     srv00pwla06.atm.local					      31-AUG-2026 09:00 JDBC Thin Client
+      2063	 5615 AXISPOOL			     srv00pwla02.atm.local					      31-AUG-2026 09:27 JDBC Thin Client
+      2120	 9143 JPERLAZA			     srv00pwla01.atm.local					      31-AUG-2026 09:25 JDBC Thin Client
+      2305	10777 AXISPOOL			     srv00pwla07.atm.local					      31-AUG-2026 09:29 JDBC Thin Client
+      2427	 4839 GMARTILLOF		     srv00pwla01.atm.local					      31-AUG-2026 09:17 JDBC Thin Client
+      2469	20726 KQUICHIMBG		     srv00pwla02.atm.local					      31-AUG-2026 09:26 JDBC Thin Client
+      2981	 3319 JHARTGU			     srv00pwla07.atm.local					      31-AUG-2026 09:52 JDBC Thin Client
+      3050	28745 ALBAVELINO		     ATM\PC00INF03V						      31-AUG-2026 09:07 PL/SQL Developer
+      3260	31928 ALBAVELINO		     ATM\PC00INF03V						      31-AUG-2026 09:07 plsqldev.exe
+      3276	27321 ADROUETJ			     srv00pwla06.atm.local					      31-AUG-2026 09:51 JDBC Thin Client
+      3465	57345 JVILLONMOR		     srv00pwla06.atm.local					      31-AUG-2026 09:56 JDBC Thin Client
+      3466	14961 KCEDENOVA 		     srv00pwla02.atm.local					      31-AUG-2026 09:41 JDBC Thin Client
+      3539	 6285 AXISPOOL			     srv00pwla07.atm.local					      31-AUG-2026 09:31 JDBC Thin Client
+      3569	 5058 SVT			     EC_NVU002							      31-AUG-2026 09:45 JDBC Thin Client
+      3609	49437 WPINO			     srv00pwla07.atm.local					      31-AUG-2026 09:33 JDBC Thin Client
+
+27 rows selected.
+
+alter system kill session '42,49613' immediate;
+alter system kill session '69,24716' immediate;
+alter system kill session '212,5222' immediate;
+alter system kill session '787,10236' immediate;
+alter system kill session '793,11173' immediate;
+alter system kill session '942,57006' immediate;
+alter system kill session '1598,17145' immediate;
+alter system kill session '1727,6712' immediate;
+alter system kill session '1755,23154' immediate;
+alter system kill session '1803,24093' immediate;
+alter system kill session '1942,20007' immediate;
+alter system kill session '1963,29627' immediate;
+alter system kill session '2050,23163' immediate;
+alter system kill session '2063,5615' immediate;
+alter system kill session '2120,9143' immediate;
+alter system kill session '2305,10777' immediate;
+alter system kill session '2427,4839' immediate;
+alter system kill session '2469,20726' immediate;
+alter system kill session '2981,3319' immediate;
+alter system kill session '3050,28745' immediate;
+alter system kill session '3260,31928' immediate;
+alter system kill session '3276,27321' immediate;
+alter system kill session '3465,57345' immediate;
+alter system kill session '3466,14961' immediate;
+alter system kill session '3539,6285' immediate;
+alter system kill session '3569,5058' immediate;
+alter system kill session '3609,49437' immediate;
