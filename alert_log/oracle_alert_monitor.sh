@@ -8,9 +8,9 @@ EXECUTE_PATH=/datos/atm_jobs/alert_log
 
 
 # Configure the necessary variables
-ALERT_LOG_PATH="$ORACLE_BASE/diag/rdbms/bdcoreatm/srvbdatm/trace/alert_srvbdatm.log"  # Path to the Oracle alert log
-BOT_TOKEN="5565295977:AAHS1KW10CMcDuxTVD4olf6Py8xxvrVU9dk"                # Token for the Telegram bot
-CHAT_ID="7343413063"                    # Chat ID to send the message to
+ALERT_LOG_PATH="$ORACLE_BASE/alert_srvbdatm.log"  # Path to the Oracle alert log
+BOT_TOKEN="1234567890:AABBCCDDEEFFGGHHiiJJKKllMMNNOOppQQRRSSTTUUVVwwxxYYzz"                # Token for the Telegram bot
+CHAT_ID="0987654321"                    # Chat ID to send the message to
 TELEGRAM_API="https://api.telegram.org/bot$BOT_TOKEN/sendMessage"
 ERROR_LOG="$EXECUTE_PATH/log.err"     # Log file for script errors
 
